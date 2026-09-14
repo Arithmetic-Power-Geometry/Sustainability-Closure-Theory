@@ -1,0 +1,31 @@
+name: SCT Reproducibility
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-and-build:
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+      - name: Test
+        run: pytest
+      - name: Reproduce experiments
+        run: python scripts/run_all.py
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sct-results-py${{ matrix.python-version }}
+          path: results/
