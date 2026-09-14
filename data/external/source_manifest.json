@@ -1,0 +1,10 @@
+{
+  "upstream_repository": "PEESEgroup/US-AI-Server-Analysis",
+  "upstream_commit": "7f47a7c5bac252a88c81a1dbd9b874246714b1fc",
+  "paper_doi": "10.1038/s41893-025-01681-y",
+  "license": "Apache-2.0",
+  "files": {
+    "Data/Baseline_PUEWUE.csv": {"git_blob_sha1": "be2151d0cb6e3f04058d563950a5c7db9be2d1bc"},
+    "Data/AI data center constructions.csv": {"git_blob_sha1": "f4292fca7685ba19b4fbafc10e5343fcdaa049ca"}
+  }
+}
