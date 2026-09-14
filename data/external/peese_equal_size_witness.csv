@@ -1,0 +1,7 @@
+company,project,state_abbr,reported_size,year,pue,wue
+Google,"Cedar Rapids, Iowa",IA,291747,2026,1.1205,1.5380
+Google,"Lincoln NE",NE,291747,2025,1.1255,1.5990
+Google,"Ridgeville, SC",SC,291747,2025,1.1449,1.6139
+Microsoft,"Cherry Valley",IL,291747,2030,1.1237,1.5265
+Microsoft,"Rome, GA",GA,291747,2025,1.1466,1.6031
+AWS,"80939 Powerline",OR,291747,2025,1.1255,1.6170
